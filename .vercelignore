@@ -1,0 +1,6 @@
+server
+node_modules
+.git
+.env.development
+README.md
+run-local.cmd
