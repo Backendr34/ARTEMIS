@@ -17,9 +17,8 @@ import HistoricalView from './components/warroom/HistoricalView'; // NEW
 import DraftCenter from './components/lol/DraftCenter';
 import DraftStrategyDeck from './components/lol/DraftStrategyDeck';
 
-// Use Vite dev-server proxy for local development.
-// This keeps the client portable across ports/environments.
-const API_BASE = '/api';
+// Use environment variable for backend URL, fallback to proxy for local development
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 function App() {
     const [mode, setMode] = useState('LIVE');
