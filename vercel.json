@@ -2,7 +2,5 @@
   "version": 2,
   "buildCommand": "npm run build --prefix client",
   "outputDirectory": "client/dist",
-  "env": {
-    "GRID_API_KEY": "@grid_api_key"
-  }
+  
 }
