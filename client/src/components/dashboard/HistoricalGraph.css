@@ -1,0 +1,92 @@
+.historical-graph {
+    background: #1C2541;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 24px;
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.graph-header h3 {
+    margin: 0;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.legend {
+    font-size: 0.8rem;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot.blue {
+    width: 10px;
+    height: 10px;
+    background: #00C8FF;
+    border-radius: 50%;
+}
+
+.chart-area {
+    display: flex;
+    height: 150px;
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #555;
+    font-size: 0.7rem;
+    padding-right: 10px;
+    text-align: right;
+    border-right: 1px solid #333;
+}
+
+.bars-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+    flex: 1;
+    max-width: 30px;
+    gap: 5px;
+}
+
+.bar {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s ease-out;
+}
+
+.bar-label {
+    font-size: 0.7rem;
+    color: #555;
+}
+
+.guideline {
+    position: absolute;
+    bottom: 50%;
+    /* 50% line */
+    left: 0;
+    width: 100%;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    z-index: 0;
+}

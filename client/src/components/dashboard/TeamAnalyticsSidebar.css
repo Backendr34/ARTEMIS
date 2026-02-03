@@ -1,0 +1,117 @@
+.team-analytics-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section-title {
+    font-family: 'Oswald', sans-serif;
+    color: #00C8FF;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.analytics-card {
+    background: #1C2541;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.analytics-card h4 {
+    margin: 0 0 12px 0;
+    color: #888;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.form-display {
+    display: flex;
+    gap: 5px;
+}
+
+.form-badge {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.form-badge.W {
+    background: #00faa0;
+    color: #002200;
+}
+
+.form-badge.L {
+    background: #FF4655;
+    color: white;
+}
+
+.map-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.map-name {
+    width: 60px;
+    color: #ccc;
+}
+
+.map-bar-bg {
+    flex: 1;
+    height: 6px;
+    background: #0b0b15;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.map-bar-fill {
+    height: 100%;
+    background: #00C8FF;
+}
+
+.map-pct {
+    width: 30px;
+    text-align: right;
+    font-weight: bold;
+    color: #fff;
+}
+
+.spotlight-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.player-avatar {
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    border: 2px solid #00C8FF;
+}
+
+.p-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.p-stat .val {
+    color: #00C8FF;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}

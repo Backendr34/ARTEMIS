@@ -1,0 +1,87 @@
+.strategy-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.strategy-card {
+    background: #1C2541;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.strat-group {
+    margin-bottom: 20px;
+}
+
+.strat-group:last-child {
+    margin-bottom: 0;
+}
+
+.strat-group h4 {
+    margin: 0 0 10px 0;
+    color: #888;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.champ-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.champ-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background: #222;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #444;
+}
+
+.champ-icon img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.ban-overlay,
+.pick-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.ban-overlay {
+    background: #FF4655;
+    border-radius: 0 0 0 6px;
+}
+
+.pick-overlay {
+    background: #00faa0;
+    border-radius: 0 0 0 6px;
+    color: #002200;
+}
+
+.strategy-card.playstyle {
+    border-left: 4px solid #00C8FF;
+}
+
+.strategy-card.playstyle p {
+    font-style: italic;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.4;
+}

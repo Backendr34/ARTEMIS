@@ -1,0 +1,97 @@
+.shap-explainer {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.shap-explainer h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #eee;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.shap-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    position: relative;
+    cursor: help;
+}
+
+.shap-desc {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+    color: #aaa;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shap-bar-container {
+    width: 60px;
+    /* Center point */
+    display: flex;
+    justify-content: center;
+    /* Actually usually SHAP is centered on 0 */
+}
+
+/* Simplified waterfall: Left is neg, Right is pos? Or just simple bars for now */
+.shap-bar-container {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.shap-bar {
+    height: 8px;
+    border-radius: 4px;
+}
+
+.shap-bar.pos {
+    background-color: #00E5FF;
+}
+
+.shap-bar.neg {
+    background-color: #FF4655;
+}
+
+.shap-val {
+    width: 40px;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.shap-val.pos {
+    color: #00E5FF;
+}
+
+.shap-val.neg {
+    color: #FF4655;
+}
+
+.shap-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    z-index: 20;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.shap-row:hover .shap-tooltip {
+    display: block;
+}

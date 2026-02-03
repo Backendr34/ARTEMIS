@@ -1,0 +1,157 @@
+.match-selector-panel {
+    background: #1C2541;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.selector-header {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mode-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #888;
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.mode-btn:hover {
+    color: #ccc;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.mode-btn.active {
+    color: #00C8FF;
+    border-bottom-color: #00C8FF;
+    background: rgba(0, 200, 255, 0.05);
+}
+
+.selector-content {
+    padding: 16px;
+    min-height: 200px;
+}
+
+/* Match List Mode */
+.match-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.match-item {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border: 1px solid transparent;
+}
+
+.match-item:hover {
+    background: rgba(0, 200, 255, 0.1);
+    border-color: rgba(0, 200, 255, 0.3);
+}
+
+.match-time {
+    font-size: 0.8rem;
+    color: #888;
+    width: 60px;
+}
+
+.match-teams {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.vs {
+    color: #555;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.arrow {
+    color: #00C8FF;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.match-item:hover .arrow {
+    opacity: 1;
+}
+
+/* Custom Mode */
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    color: #888;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.input-group input {
+    width: 100%;
+    background: #0b0b15;
+    border: 1px solid #333;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    box-sizing: border-box;
+    /* Fix padding issue */
+}
+
+.input-group input:focus {
+    border-color: #00C8FF;
+}
+
+.vs-badge {
+    color: #555;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.analyze-btn {
+    width: 100%;
+    background: linear-gradient(90deg, #00C8FF, #0088cc);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: #002200;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.analyze-btn:hover {
+    filter: brightness(1.1);
+}

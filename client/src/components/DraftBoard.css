@@ -1,0 +1,141 @@
+.draft-board {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.team-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-header {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.team-side.blue .team-header {
+    color: #00A9E0;
+}
+
+.team-side.red .team-header {
+    color: #FF4655;
+}
+
+.bans-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.ban-slot {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ban-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.picks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.pick-slot {
+    flex: 1;
+    background: rgba(20, 20, 30, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: flex-end;
+    /* Align text to bottom */
+}
+
+.pick-slot.empty:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.pick-slot .champion-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.pick-slot:hover .champion-image {
+    opacity: 0.8;
+}
+
+.pick-slot .champion-name {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px black;
+    text-transform: uppercase;
+}
+
+.pick-slot .empty-label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.team-side.blue .pick-slot {
+    border-left: 5px solid #00A9E0;
+    border-radius: 0 10px 10px 0;
+}
+
+.team-side.red .pick-slot {
+    border-right: 5px solid #FF4655;
+    border-radius: 10px 0 0 10px;
+    align-items: flex-end;
+}
+
+/* Align text to bottom right? actually flex-end is bottom, maybe justify-content? */
+
+.team-side.red .pick-slot .champion-name {
+    margin-left: 0;
+    margin-right: 20px;
+    width: 100%;
+    text-align: right;
+}

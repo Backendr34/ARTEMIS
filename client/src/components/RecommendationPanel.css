@@ -1,0 +1,106 @@
+.recommendation-panel {
+    background: rgba(16, 20, 29, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    height: 100%;
+}
+
+.recommendation-panel h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #a0a0b0;
+    letter-spacing: 1px;
+}
+
+.recommendation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rec-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.rec-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(5px);
+}
+
+/* Border colors by type */
+.rec-card.counter {
+    border-left: 4px solid #00E5FF;
+}
+
+/* Cyan */
+.rec-card.synergy {
+    border-left: 4px solid #76FF03;
+}
+
+/* Neon Green */
+.rec-card.comfort {
+    border-left: 4px solid #FFAB00;
+}
+
+/* Amber */
+.rec-card.meta {
+    border-left: 4px solid #D500F9;
+}
+
+/* Purple */
+
+.rec-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.champion-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.score {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #76FF03;
+}
+
+.rec-role {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.rec-reasoning {
+    font-size: 0.9rem;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rec-reasoning .tag {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.rec-reasoning p {
+    margin: 0;
+    line-height: 1.3;
+}

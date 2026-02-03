@@ -1,0 +1,62 @@
+.win-thermometer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 400px;
+    width: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 20px 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.thermometer-bar {
+    position: relative;
+    width: 20px;
+    height: 300px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.thermometer-bar .fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: height 0.5s ease-out, background-color 0.5s ease;
+}
+
+.thermometer-bar .midline {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+}
+
+.thermometer-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.thermometer-label .team-name {
+    font-size: 0.8rem;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.thermometer-label .percentage {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}

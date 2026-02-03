@@ -1,0 +1,88 @@
+.draft-strategy-deck {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.deck-card {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  background: rgba(10, 17, 40, 0.55);
+  padding: 14px;
+}
+
+.deck-title {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  color: #00C8FF;
+  margin-bottom: 12px;
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.control-row label {
+  color: #888;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.control-row select {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.pill {
+  background: rgba(0, 200, 255, 0.15);
+  border: 1px solid rgba(0, 200, 255, 0.25);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: bold;
+  color: #00C8FF;
+}
+
+.export-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #00C8FF, #0088cc);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+}
+
+.export-btn:hover {
+  filter: brightness(1.05);
+}
+
+.voice-hints {
+  margin-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 10px;
+}
+
+.hint-title {
+  font-family: 'Oswald', sans-serif;
+  color: #888;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+
+.hint {
+  color: #aaa;
+  font-size: 0.8rem;
+}

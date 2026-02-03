@@ -1,0 +1,39 @@
+.quick-stats-bar {
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    backdrop-filter: blur(5px);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.stat-item .label {
+    font-size: 0.7rem;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.stat-item .value {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #eee;
+}
+
+.stat-item .value.highlight {
+    color: #00C8FF;
+}
+
+.divider {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 100;
+}

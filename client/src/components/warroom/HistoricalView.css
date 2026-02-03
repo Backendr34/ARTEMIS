@@ -1,0 +1,158 @@
+.historical-view {
+    display: flex;
+    height: 100%;
+    gap: 20px;
+}
+
+.hist-col {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-col {
+    flex: 1;
+}
+
+.vod-col {
+    flex: 2;
+}
+
+.notes-col {
+    flex: 1;
+}
+
+.h-header {
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+    color: #00C8FF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+}
+
+/* Match Key */
+.hist-match-card {
+    background: #0b0b15;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border-left: 3px solid #555;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.hist-match-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.hm-vs {
+    font-weight: bold;
+    color: #fff;
+}
+
+.hm-result {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.hm-result.won {
+    color: #00faa0;
+}
+
+.hm-result.lost {
+    color: #FF4655;
+}
+
+.hm-meta {
+    font-size: 0.7rem;
+    color: #888;
+}
+
+/* VOD */
+.vod-placeholder {
+    height: 150px;
+    background: #000;
+    border: 1px dashed #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.play-icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.mistake-timeline {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.mistake-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.m-time {
+    font-family: 'Oswald', sans-serif;
+    color: #00C8FF;
+    font-size: 0.9rem;
+}
+
+.m-type {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #000;
+}
+
+.m-type.high {
+    background: #FF4655;
+}
+
+.m-type.medium {
+    background: #FFAA00;
+}
+
+.m-type.low {
+    background: #00faa0;
+}
+
+.m-desc {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+/* Notes */
+.note-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.note-card h4 {
+    margin: 0 0 5px 0;
+    color: #FFAA00;
+    font-size: 0.85rem;
+}
+
+.note-card p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #aaa;
+    line-height: 1.4;
+}
